@@ -1,0 +1,189 @@
+{
+  "success": true,
+  "data": {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Classroom Automation and Student Counter",
+        "category": "Industrial Automation",
+        "summary": "Arduino UNO-based bidirectional student counter and intelligent classroom lighting/load control system.",
+        "description": "Designed and built an intelligent classroom energy management system powered by an Arduino UNO and bidirectional infrared (IR) beam sensors. The system accurately tallies students entering and exiting the classroom, dynamically switching lighting and ceiling fan relays based on real-time occupancy to eliminate idle standby power consumption.",
+        "tools": "Arduino UNO, Bidirectional IR Sensors, 5V/230V Relay Module, 16x2 LCD Display, C++, Proteus",
+        "highlights": "Real-time bidirectional occupant count tracking; automated zero-idle relay switching for AC lighting.",
+        "github_url": "https://github.com/akashdamahe",
+        "demo_url": "#",
+        "icon": "cpu",
+        "badge": "IoT & Automation",
+        "order_index": 1
+      },
+      {
+        "id": 2,
+        "title": "Dual Axis Solar Panel Tracker",
+        "category": "Renewable Energy",
+        "summary": "Sun-tracking photovoltaic rig with dual-axis servo rotation maximizing solar irradiance capture and panel efficiency.",
+        "description": "Engineered an active dual-axis solar photovoltaic tracking prototype capable of dynamic movement across both azimuth and elevation axes. Employs light-dependent resistor (LDR) sensor arrays and servo actuator mechanisms to continually face the sun perpendicular to the panel plane, significantly boosting overall solar power harvest compared to stationary panels.",
+        "tools": "Arduino / Microcontroller, LDR Sensor Array, Dual Servo Motors, Solar PV Module, DC-DC Buck Converter, Proteus",
+        "highlights": "Dual-axis orientation tracking maximizes daily PV energy harvesting by up to 30–40%; automated night repositioning.",
+        "github_url": "https://github.com/akashdamahe",
+        "demo_url": "#",
+        "icon": "sun",
+        "badge": "Renewable Energy",
+        "order_index": 2
+      },
+      {
+        "id": 3,
+        "title": "Wireless Charging for Electric Vehicles (On-Road Dynamic Charging)",
+        "category": "Embedded & EV",
+        "summary": "Dynamic inductive contactless power transfer system allowing electric vehicles to charge while in motion on the roadway.",
+        "description": "Researched and prototyped an on-the-move dynamic wireless power transfer (DWPT) system for Electric Vehicles. Employs high-frequency resonant inductive coupling between transmitter primary coils embedded beneath the road surface and a secondary receiver pickup coil mounted on the EV chassis, eliminating range anxiety and minimizing onboard battery pack weight.",
+        "tools": "Resonant Inductive Coupling, High-Frequency Inverter (PWM), Ferrite Coils, Power MOSFETs, Rectifier, MATLAB/Simulink",
+        "highlights": "Dynamic on-road wireless inductive charging; mitigates EV range anxiety and significantly reduces required battery mass.",
+        "github_url": "https://github.com/akashdamahe",
+        "demo_url": "#",
+        "icon": "battery-charging",
+        "badge": "Cutting-Edge EV",
+        "order_index": 3
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "degree": "Bachelor of Engineering (B.E.) in Electrical Engineering",
+        "institution": "Government College of Engineering Yavatmal",
+        "board_university": "State Technological University (Accredited)",
+        "period": "2024 - 2027",
+        "score_grade": "CGPA: 8.05 / 10.0 (First Class with Distinction)",
+        "honors": "Department Topper (3rd Year)",
+        "description": "Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured 1st rank across all semesters with distinction honors.",
+        "key_subjects": "Power System Analysis, Switchgear & Protection, Electrical Drives & Control, High Voltage Engineering, Renewable Energy Systems, Control Systems",
+        "badge": "Degree Topper",
+        "order_index": 1
+      },
+      {
+        "id": 2,
+        "degree": "Diploma in Electrical Engineering",
+        "institution": "Government Polytechnic College, Gondia",
+        "board_university": "State Board of Technical Education (MSBTE/SBTE)",
+        "period": "2021 - 2024",
+        "score_grade": "Percentage: 87.44% (First Class with Distinction)",
+        "honors": "Polytechnic Institute Topper",
+        "description": "Comprehensive foundational practical engineering training emphasizing electrical machines, industrial wiring, transformer maintenance, power transmission, and electronics.",
+        "key_subjects": "Electrical Machines (AC/DC), Transmission & Distribution, Industrial Electronics, PLC & Microcontrollers, Electrical Estimating & Costing",
+        "badge": "Diploma Topper",
+        "order_index": 2
+      },
+      {
+        "id": 3,
+        "degree": "Secondary School Certificate (SSC / 10th Standard)",
+        "institution": "Adarsh High School & Junior College",
+        "board_university": "State Secondary & Higher Secondary Education Board",
+        "period": "2020 - 2021",
+        "score_grade": "Percentage: 86.80% (Distinction)",
+        "honors": "School Merit Topper",
+        "description": "Strong foundation in Mathematics, Physical Sciences, and Analytical Reasoning with honors.",
+        "key_subjects": "Advanced Mathematics, Physical Sciences, Information Technology, English",
+        "badge": "School Merit",
+        "order_index": 3
+      }
+    ],
+    "competitions": [
+      {
+        "id": 1,
+        "title": "College Level Technical Project Expo",
+        "award": "1st Prize (Winner)",
+        "event_name": "Annual Technical Project Exhibition",
+        "organizer": "Government Polytechnic / Engineering College",
+        "year": "2024",
+        "description": "Awarded 1st Prize for designing and demonstrating innovative electrical engineering hardware models and embedded automation solutions.",
+        "badge_color": "amber",
+        "order_index": 1
+      },
+      {
+        "id": 2,
+        "title": "Extempore Speech Competition",
+        "award": "2nd Prize",
+        "event_name": "Inter-College Elocution & Communication Meet",
+        "organizer": "Student Council & Technical Literary Club",
+        "year": "2023",
+        "description": "Secured 2nd prize in extempore speech presenting analytical perspectives on emerging renewable energy trends and grid sustainability.",
+        "badge_color": "blue",
+        "order_index": 2
+      },
+      {
+        "id": 3,
+        "title": "Conference on Emerging Trends in Electrical Engineering (NCETEE)",
+        "award": "Best Research Paper Award",
+        "event_name": "National Technical Conference",
+        "organizer": "Faculty of Electrical Engineering",
+        "year": "2024",
+        "description": "Authored and presented technical research on modern power distribution, smart grid automation, and renewable energy integration.",
+        "badge_color": "emerald",
+        "order_index": 3
+      },
+      {
+        "id": 4,
+        "title": "Academic Topper in 2nd Year Diploma in Electrical Engineering",
+        "award": "Rank 1 (Department Distinction)",
+        "event_name": "Annual Board Technical Examinations",
+        "organizer": "State Board of Technical Education",
+        "year": "2021",
+        "description": "Ranked 1st in the department across 2nd year Diploma coursework with distinction honors in core electrical subjects.",
+        "badge_color": "purple",
+        "order_index": 4
+      },
+      {
+        "id": 5,
+        "title": "Academic Topper in 3rd Year Electrical Engineering",
+        "award": "Rank 1 (Gold Medalist)",
+        "event_name": "Final Board Technical Examinations",
+        "organizer": "State Board of Technical Education",
+        "year": "2022",
+        "description": "Secured highest aggregate marks in the graduating diploma batch with distinction in electrical machines, transmission, and switchgear.",
+        "badge_color": "amber",
+        "order_index": 5
+      }
+    ],
+    "internships": [
+      {
+        "id": 1,
+        "role": "Electrical Engineering Intern",
+        "company": "Sonali Power Equipments Private Limited",
+        "location": "Industrial Area, India",
+        "period": "6 Weeks (2023)",
+        "type": "Power Equipment & Transformer Testing",
+        "description": "Inspected and assessed power transformers for damage or potential failures to ensure safe and reliable industrial operation.",
+        "learnings": "Conducted insulation resistance testing, turns ratio testing, oil dielectric breakdown voltage (BDV) tests, and transformer assembly inspections.",
+        "order_index": 1
+      },
+      {
+        "id": 2,
+        "role": "Electric Motor Mechanic Trainee",
+        "company": "Mai Electricals",
+        "location": "Yavatmal, India",
+        "period": "1 Month (2025)",
+        "type": "Electric Motor Maintenance & Overhaul",
+        "description": "Performed routine maintenance and preventive inspections on AC and DC electric motors, identifying potential electrical and mechanical problems.",
+        "learnings": "Assisted with stator winding resistance tests, bearing inspection and lubrication, motor terminal connection verification, and starter panel troubleshooting.",
+        "order_index": 2
+      },
+      {
+        "id": 3,
+        "role": "Transformer Builder Intern",
+        "company": "Highrise Transformers",
+        "location": "Nagpur, India",
+        "period": "1 Month (2025)",
+        "type": "Transformer Manufacturing & Insulation",
+        "description": "Operated vacuum impregnating and oil purification equipment to ensure proper impregnation and insulation of transformer components.",
+        "learnings": "Mastered vacuum varnish impregnation processes, core-coil assembly techniques, dielectric oil dehydration/filtration, and high-voltage safety practices.",
+        "order_index": 3
+      }
+    ],
+    "stats": {
+      "projects": 3,
+      "competitions": 5,
+      "internships": 3,
+      "contacts": 1,
+      "qualifications": "Diploma + Degree in EE"
+    }
+  }
+}
