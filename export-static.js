@@ -1,20 +1,31 @@
 const fs = require('fs');
 const path = require('path');
+
+// Do NOT load native C++ SQLite bindings in cloud environments (Vercel / CI)
+// as native binaries can cause SIGSEGV on different Linux architectures.
+const isCloudBuild = !!(process.env.VERCEL || process.env.CI || process.env.NOW_BUILDER);
 let data = null;
-try {
-  const db = require('./database.js');
-  data = {
-    success: true,
-    data: {
-      projects: db.getAllProjects(),
-      education: db.getAllEducation(),
-      competitions: db.getAllCompetitions(),
-      internships: db.getAllInternships(),
-      stats: db.getStats()
-    }
-  };
-} catch (err) {
-  // Graceful fallback for cloud build environments (e.g. Vercel)
+
+if (!isCloudBuild) {
+  try {
+    const db = require('./database.js');
+    data = {
+      success: true,
+      data: {
+        projects: db.getAllProjects(),
+        education: db.getAllEducation(),
+        competitions: db.getAllCompetitions(),
+        internships: db.getAllInternships(),
+        stats: db.getStats()
+      }
+    };
+  } catch (err) {
+    console.log('Local SQLite export skipped:', err.message);
+  }
+}
+
+// In cloud builds (Vercel) or when SQLite native binary is unavailable, use the existing JSON
+if (!data) {
   const existingPath = path.join(__dirname, 'public', 'data', 'portfolio-data.json');
   if (fs.existsSync(existingPath)) {
     data = JSON.parse(fs.readFileSync(existingPath, 'utf8'));
@@ -43,4 +54,4 @@ for (const item of itemsToSync) {
   }
 }
 
-console.log('✅ Successfully exported static portfolio data and synced to /docs and root for GitHub Pages!');
+console.log('✅ Successfully exported static portfolio data and verified for deployment!');
