@@ -413,8 +413,8 @@ function updateStats(stats) {
   const statCompetitions = document.getElementById('stat-competitions');
   const statInternships = document.getElementById('stat-internships');
 
-  if (statProjects) statProjects.textContent = `${stats.projects}+`;
-  if (statCompetitions) statCompetitions.textContent = `${stats.competitions}+`;
+  if (statProjects) statProjects.textContent = `${stats.projects}`;
+  if (statCompetitions) statCompetitions.textContent = `${stats.competitions}`;
   if (statInternships) statInternships.textContent = `${stats.internships}`;
 }
 
