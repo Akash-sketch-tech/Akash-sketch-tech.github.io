@@ -111,38 +111,34 @@ function seedDefaultData() {
     const educationData = [
       [
         'Bachelor of Engineering (B.E.) in Electrical Engineering',
-        'Government College of Engineering, Yavatmal',
-        'State Technological University (Accredited)',
+        'Government College of Engineering Yavatmal',
         '2024 - 2027',
         'CGPA: 8.05 / 10.0 (First Class with Distinction)',
         'Department Topper (3rd Year)',
-        'Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured top academic rank across semesters with distinction honors.',
+        'Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured 1st rank across all semesters with distinction honors.',
         'Power System Analysis, Switchgear & Protection, Electrical Drives & Control, High Voltage Engineering, Renewable Energy Systems, Control Systems',
-        'Degree Topper',
         1
       ],
       [
         'Diploma in Electrical Engineering',
         'Government Polytechnic College, Gondia',
-        'State Board of Technical Education (MSBTE)',
+        'State Board of Technical Education (MSBTE/SBTE)',
         '2021 - 2024',
         'Percentage: 87.44% (First Class with Distinction)',
         'Polytechnic Institute Topper',
         'Comprehensive foundational practical engineering training emphasizing electrical machines, industrial wiring, transformer maintenance, power transmission, and electronics.',
         'Electrical Machines (AC/DC), Transmission & Distribution, Industrial Electronics, PLC & Microcontrollers, Electrical Estimating & Costing',
-        'Diploma Topper',
         2
       ],
       [
         'Secondary School Certificate (SSC / 10th Standard)',
-        'Adarsh High School & Junior College',
-        'State Secondary & Higher Secondary Education Board',
+        'Shri Gurunanak High School, Gondia',
+        'Maharashtra State Secondary & Higher Secondary Education Board',
         '2020 - 2021',
         'Percentage: 86.80% (Distinction)',
         'School Merit Topper',
-        'Strong foundational coursework in Mathematics, Physical Sciences, and Analytical Reasoning with honors.',
+        'Strong foundation in Mathematics, Physical Sciences, and Analytical Reasoning with honors.',
         'Advanced Mathematics, Physical Sciences, Information Technology, English',
-        'School Merit',
         3
       ]
     ];
@@ -238,8 +234,7 @@ function seedDefaultData() {
       ],
       [
         'Conference on Emerging Trends in Electrical Engineering (NCETEE)',
-        'Best Research Paper Award',
-        'National Technical Conference',
+        'Best Research Paper Award', ,
         'Faculty of Electrical Engineering',
         '2024',
         'Authored and presented technical research on modern power distribution, smart grid automation, and renewable energy integration.',

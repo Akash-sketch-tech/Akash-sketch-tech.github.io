@@ -49,12 +49,12 @@
       {
         "id": 1,
         "degree": "Bachelor of Engineering (B.E.) in Electrical Engineering",
-        "institution": "Government College of Engineering, Yavatmal",
+        "institution": "Government College of Engineering Yavatmal",
         "board_university": "State Technological University (Accredited)",
         "period": "2024 - 2027",
         "score_grade": "CGPA: 8.05 / 10.0 (First Class with Distinction)",
         "honors": "Department Topper (3rd Year)",
-        "description": "Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured top academic rank across semesters with distinction honors.",
+        "description": "Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured 1st rank across all semesters with distinction honors.",
         "key_subjects": "Power System Analysis, Switchgear & Protection, Electrical Drives & Control, High Voltage Engineering, Renewable Energy Systems, Control Systems",
         "badge": "Degree Topper",
         "order_index": 1
@@ -63,7 +63,7 @@
         "id": 2,
         "degree": "Diploma in Electrical Engineering",
         "institution": "Government Polytechnic College, Gondia",
-        "board_university": "State Board of Technical Education (MSBTE)",
+        "board_university": "State Board of Technical Education (MSBTE/SBTE)",
         "period": "2021 - 2024",
         "score_grade": "Percentage: 87.44% (First Class with Distinction)",
         "honors": "Polytechnic Institute Topper",
@@ -80,7 +80,7 @@
         "period": "2020 - 2021",
         "score_grade": "Percentage: 86.80% (Distinction)",
         "honors": "School Merit Topper",
-        "description": "Strong foundational coursework in Mathematics, Physical Sciences, and Analytical Reasoning with honors.",
+        "description": "Strong foundation in Mathematics, Physical Sciences, and Analytical Reasoning with honors.",
         "key_subjects": "Advanced Mathematics, Physical Sciences, Information Technology, English",
         "badge": "School Merit",
         "order_index": 3

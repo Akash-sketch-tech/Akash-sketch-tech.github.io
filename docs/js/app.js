@@ -481,14 +481,14 @@ function initContactForm() {
       } else {
         // Fallback for static hosting (GitHub Pages) -> open mail client directly
         const mailBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`;
-        window.location.href = `mailto:akashdamahe77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
+        window.location.href = `mailto:akashdamahe580@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
         showToast('Opening default email client to send message to Akash...', 'success');
         form.reset();
       }
     } catch (err) {
       console.error('Contact form error:', err);
       const mailBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`;
-      window.location.href = `mailto:akashdamahe77@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
+      window.location.href = `mailto:akashdamahe580@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
       showToast('Opening email client to send message to Akash...', 'success');
       form.reset();
     } finally {
