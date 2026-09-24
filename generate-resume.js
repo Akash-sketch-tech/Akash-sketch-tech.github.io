@@ -30,9 +30,9 @@ function sectionHeader(title) {
 
 // Header
 doc.fontSize(22).font('Helvetica-Bold').fillColor(primaryColor).text('AKASH DAMAHE', { align: 'center' });
-doc.fontSize(10).font('Helvetica-Bold').fillColor(accentColor).text('ELECTRICAL ENGINEER  |  DIPLOMA + DEGREE (ACADEMIC TOPPER)', { align: 'center' });
+doc.fontSize(10).font('Helvetica-Bold').fillColor(accentColor).text('ELECTRICAL ENGINEER  |  DIPLOMA + DEGREE', { align: 'center' });
 doc.fontSize(8.5).font('Helvetica').fillColor(lightGray).text(
-  'Email: akashdamahe@example.com  |  Phone: +91 98765 43210  |  LinkedIn: linkedin.com/in/akashdamahe  |  Portfolio: akashdamahe.onrender.com',
+  'Email: akashdamahe580@gmail.com  |  LinkedIn: linkedin.com/in/akash-damahe06102005  |  Portfolio: Akash-sketch-tech.github.io',
   { align: 'center' }
 );
 

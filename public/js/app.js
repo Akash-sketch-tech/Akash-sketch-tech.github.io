@@ -444,11 +444,10 @@ function initContactForm() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const name = document.getElementById('contact-name').value.trim();
-    const email = document.getElementById('contact-email').value.trim();
-    const phone = document.getElementById('contact-phone').value.trim();
-    const subject = document.getElementById('contact-subject').value.trim();
-    const message = document.getElementById('contact-message').value.trim();
+    const name = document.getElementById('contact-name')?.value.trim() || '';
+    const email = document.getElementById('contact-email')?.value.trim() || '';
+    const subject = document.getElementById('contact-subject')?.value.trim() || '';
+    const message = document.getElementById('contact-message')?.value.trim() || '';
 
     // Validation
     if (!name || !email || !subject || !message) {
@@ -471,7 +470,7 @@ function initContactForm() {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, subject, message })
+        body: JSON.stringify({ name, email, subject, message })
       }).catch(() => null);
 
       if (response && response.ok) {
@@ -480,14 +479,14 @@ function initContactForm() {
         form.reset();
       } else {
         // Fallback for static hosting (GitHub Pages) -> open mail client directly
-        const mailBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`;
+        const mailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
         window.location.href = `mailto:akashdamahe580@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
         showToast('Opening default email client to send message to Akash...', 'success');
         form.reset();
       }
     } catch (err) {
       console.error('Contact form error:', err);
-      const mailBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`;
+      const mailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
       window.location.href = `mailto:akashdamahe580@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailBody)}`;
       showToast('Opening email client to send message to Akash...', 'success');
       form.reset();
