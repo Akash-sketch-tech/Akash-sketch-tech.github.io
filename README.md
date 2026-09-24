@@ -1,206 +1,110 @@
 # ⚡ Akash Damahe — Professional Electrical Engineering Portfolio
 
-A modern, responsive, and high-performance personal portfolio website for **Akash Damahe**, an Electrical Engineer holding both a **Diploma in Electrical Engineering** and a **Bachelor's Degree in Electrical Engineering** with top academic honors (Department & State Board Topper).
+A modern, responsive, and high-performance personal portfolio website for **Akash Damahe**, Electrical Engineer holding a **Diploma in Electrical Engineering** (Government Polytechnic College Gondia) and pursuing **B.Tech in Electrical Engineering** (Government College of Engineering Yavatmal) with Academic Topper honors.
 
-Built with a clean light mode by default, seamless dark mode toggle, interactive SQLite-backed contact and dynamic portfolio API, and ready for 1-click deployment on **Render** via **GitHub**.
+- 🌐 **Live Website (GitHub Pages)**: [https://akash-sketch-tech.github.io/](https://akash-sketch-tech.github.io/)
+- 💼 **LinkedIn Profile**: [linkedin.com/in/akash-damahe06102005](https://www.linkedin.com/in/akash-damahe06102005)
+- ✉️ **Contact Email**: [akashdamahe580@gmail.com](mailto:akashdamahe580@gmail.com)
+
+---
+
+## 🌟 Academic Background & Credentials
+
+1. **Bachelor of Technology (B.Tech) in Electrical Engineering** (2024 – 2027)
+   - **Institution**: Government College of Engineering Yavatmal
+   - **University**: Dr. Babasaheb Ambedkar Technological University (DBATU)
+   - **Score**: **CGPA: 8.05 / 10.0**
+   - **Honors**: Academic Topper (3rd Year)
+2. **Diploma in Electrical Engineering** (2021 – 2024)
+   - **Institution**: Government Polytechnic College Gondia
+   - **Board**: Maharashtra State Board of Technical Education (MSBTE)
+   - **Score**: **87.44% (First Class with Distinction)**
+   - **Honors**: Academic Topper (2nd & 3rd Year)
+3. **Secondary School Certificate (SSC / 10th)** (2020 – 2021)
+   - **School**: Shri Gurunanak High School, Gondia
+   - **Board**: Maharashtra State Board
+   - **Score**: **86.80% (Distinction)**
+
+---
+
+## 🛠️ Featured Technical Projects
+
+1. **Classroom Automation and Student Counter**
+   - *Description*: An Arduino UNO based project that can count the student entering and leaving classroom and also turns the lights on and off as per the presence of student in the class.
+   - *Tech Stack*: Arduino UNO, Bidirectional IR Sensors, 5V Relay Modules, 16x2 LCD Display, Embedded C++.
+2. **Dual Axis Solar Panel**
+   - *Description*: Solar panel that can move on its axis and can move from facing one direction to another for maximum efficiency.
+   - *Tech Stack*: Microcontroller, LDR Sensor Array, Dual Servo Motors, Solar PV Module, DC-DC Converter.
+3. **Wireless Charging to Electric Vehicle**
+   - *Description*: An EV that can get charge while running on road.
+   - *Tech Stack*: Resonant Inductive Coupling Coils, High-Frequency Inverter, Power MOSFETs, Rectifier Circuit.
+
+---
+
+## 🏭 Industrial Internships & Practical Training
+
+1. **Sonali Power Equipments Private Limited** (June 2023 – July 2023 | Nagpur, Maharashtra)
+   - *Role*: Transformer Repairing And Testing
+   - *Highlights*: Inspected and assessed transformers for damage or potential failures to ensure safe and reliable operation; replaced transformer bushings and accessories, maintaining safety and electrical integrity.
+2. **Mai Electricals, Yavatmal** (Jan 2025 – Feb 2025 | Yavatmal, Maharashtra)
+   - *Role*: Electric Motor Mechanic
+   * *Highlights*: Performed routine maintenance and preventive inspections on electric motors, identifying potential problems and implementing corrective actions; repaired and maintained electric motors and related electrical systems.
+3. **Highrise Transformers, Nagpur** (Jul 2025 – Aug 2025 | Nagpur, Maharashtra)
+   * *Role*: Transformer Builder
+   * *Highlights*: Operated vacuum impregnating and oil purification equipment to ensure proper impregnation and insulation of transformer components; constructed and assembled distribution and power transformers up to 115kV with a capacity of 1050 MVA.
+4. **TATA Advanced Systems Ltd.** (Jul 2026 – Aug 2026 | Nagpur, Maharashtra)
+   * *Role*: Electrical Maintenance Intern
+   * *Highlights*: Testing of industrial electrical equipment and control panels.
+
+---
+
+## 🏆 Competitions & Technical Achievements
+
+1. 🥇 **Won Institute level Quiz Competition in 2023** in Government Polytechnic Gondia.
+2. 📄 **Won Best Research Paper Award in 2023** in Government Polytechnic Gondia.
+3. 🏆 **Won Best Project Award** in the final year of Diploma.
+4. 🎖️ **Academic Topper** for 2nd and 3rd year of Diploma.
+5. 🎖️ **Academic Topper** for 3rd year in Engineering.
+6. ⚡ **Won Best Performer Award** in IoT + Antigravity Workshop at Government College of Engineering Yavatmal.
 
 ---
 
 ## 🚀 Live Demo & Tech Stack
 
-- **Frontend**: HTML5, Tailwind CSS (via CDN with extended design tokens), Vanilla JavaScript (ES6+), Google Fonts (*Plus Jakarta Sans* & *JetBrains Mono*).
-- **Backend**: Node.js, Express 5.x REST API.
-- **Database**: SQLite3 via `better-sqlite3` (WAL mode enabled for speed and atomic persistence).
-- **Deployment**: Render-ready with dynamic port binding (`process.env.PORT || 3000`), zero external database configuration needed.
-
----
-
-## 📁 Project Directory Structure
-
-```text
-AKASH PORTFOLIO/
-├── data/
-│   └── portfolio.db              # SQLite database (auto-created & auto-seeded on first run)
-├── public/
-│   ├── index.html                # Responsive, accessible, semantic portfolio website
-│   ├── css/
-│   │   └── style.css             # Circuit patterns, electrical glow effects, theme styling
-│   ├── js/
-│   │   └── app.js                # Frontend logic: dark mode toggle, SQLite APIs, modals, toast
-│   └── assets/
-│       ├── placeholder-avatar.svg # Professional electrical engineer avatar & badge placeholder
-│       └── Akash_Damahe_Resume.pdf# ATS-friendly 2-page downloadable resume
-├── database.js                   # SQLite schema, seed data, and query helper methods
-├── server.js                     # Express server, REST endpoints, and static file router
-├── generate-resume.js            # Node.js PDF generator for Akash's official resume
-├── render.yaml                   # Optional Render Blueprint for 1-click deployment
-├── package.json                  # Scripts ("start", "dev") and dependencies
-├── .gitignore                    # Ignores node_modules, temp files, and local logs
-└── README.md                     # Documentation and deployment walkthrough
-```
-
----
-
-## 🌟 Key Features & Sections
-
-1. **Home / Hero Section**:
-   - **Left Column**: Professional tagline emphasizing the dual engineering foundation (Diploma + Degree), intro summary, quick metrics strip (*#1 Rank / Topper*, *6+ Projects*, *5+ Wins*, *3 Internships*), **"Download Resume"** button, and **"Contact Me"** button.
-   - **Right Column**: Medium-sized circular profile photo container with rotating dashed circuit rings, pulsing glow, and floating distinction badges.
-2. **About Me Section**:
-   - Detailed narrative of Akash's technical journey: bridging the practical field expertise from a 3-year Polytechnic Diploma with theoretical and analytical depth from a Bachelor's Degree.
-   - Core competency pillars: *Power Systems & Substations*, *Industrial Automation & Drives*, and *Renewable Solar PV & EV*.
-   - Technical Skill Matrix across CAD, Automation, Power Systems, and Embedded Programming.
-3. **Education Section**:
-   - Timeline highlighting academic distinctions:
-     - **B.E. in Electrical Engineering** (CGPA: 9.42 / 10.0 — Department Topper & Gold Medalist).
-     - **Diploma in Electrical Engineering** (92.80% Distinction — State Board Merit List Honoree & Institute Topper).
-     - **Secondary School Certificate** (93.60% Distinction — School Merit Topper).
-4. **Featured Projects Section**:
-   - Filterable category grid (*Power Systems & Grid*, *Industrial Automation & PLC*, *Renewable & Solar PV*, *Embedded & EV BMS*).
-   - Technical specification modal with problem statement, architecture, and tool stack.
-5. **Competitions & Achievements Section**:
-   - Highlights 1st Prize & Gold Trophy wins at National Level Technical Project Expos, State Circuit Debugging Championships, and Best Research Paper Awards at IEEE-sponsored conferences.
-6. **Internships Section**:
-   - Real-world experience at a **220kV/132kV Extra High Voltage Substation**, industrial **PLC & SCADA Automation plant**, and **Solar Photovoltaic EPC**.
-7. **Contact Section & SQLite Persistence**:
-   - Working contact form submitting directly to the Express server (`POST /api/contact`) and stored in `data/portfolio.db`.
-   - Real-time animated notification toast.
-   - **Database Messages Viewer (Admin)** modal in the footer to review submitted messages directly in the browser!
-8. **Theme Toggle**:
-   - Clean, professional light mode by default.
-   - Seamless transition to high-contrast cyber-electric dark mode with local storage persistence.
+- **Frontend**: HTML5, Vanilla CSS (with electric neon styling, glassmorphism, and micro-interactions), Vanilla JavaScript (ES6+).
+- **Backend (Optional full-stack mode)**: Node.js with Express 5.x REST API.
+- **Database**: SQLite3 via `better-sqlite3` (auto-seeded on initialization).
+- **Deployment**: Dual-mode compatibility — served statically on **GitHub Pages** (`https://akash-sketch-tech.github.io/`) and dynamically ready for **Render** via `render.yaml`.
 
 ---
 
 ## 💻 Local Setup & Development Instructions
 
 ### 1. Prerequisites
-- **Node.js** (v18.0.0 or higher recommended, e.g. v20 or v24).
+- **Node.js** (v18.0.0 or higher).
 - **npm** (bundled with Node.js).
 
-### 2. Installation
-Open your terminal in the project directory:
+### 2. Installation & Running Locally
 ```bash
-# Clone or navigate to the project directory
-cd "AKASH PORTFOLIO"
+# Clone the repository
+git clone https://github.com/Akash-sketch-tech/Akash-sketch-tech.github.io.git
+cd Akash-sketch-tech.github.io
 
-# Install project dependencies
+# Install dependencies
 npm install
-```
 
-### 3. Start the Server
-```bash
-# Production start mode
+# Start local server
 npm start
-
-# OR development live-reload mode (Node 18+)
-npm run dev
 ```
-
-The server will initialize the SQLite database (`data/portfolio.db`), seed the default data, and listen on port **3000**:
-```text
-=======================================================
-⚡ Akash Damahe Portfolio Server running on port 3000
-🔗 Local URL: http://localhost:3000
-📁 Environment: development
-=======================================================
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your web browser.
+The server will start at `http://localhost:3000`.
 
 ---
 
-## 🎨 How to Customize Your Portfolio
+## 🌐 Deploying on Render
 
-### 1. Adding Your Real Profile Photo
-1. Place your photo inside `public/assets/` named `profile.jpg` (or `profile.png`).
-2. Open `public/index.html` and update the `src` attribute of `#profile-photo-img` (around line 180):
-   ```html
-   <img id="profile-photo-img" src="/assets/profile.jpg" alt="Akash Damahe" class="...">
-   ```
-
-### 2. Updating Resume PDF
-- You can place your own finalized resume PDF into `public/assets/Akash_Damahe_Resume.pdf`.
-- Or edit `generate-resume.js` and run:
-  ```bash
-  node generate-resume.js
-  ```
-
-### 3. Adding or Modifying Projects & Content
-- Open `database.js` to modify the default project items, education details, awards, or internships in the `seedDefaultData()` function.
-
----
-
-## 🌐 Deploying Live on Render (Step-by-Step)
-
-Deploying this portfolio on Render is free, fast, and takes under 3 minutes:
-
-### Step 1: Initialize Git and Push to GitHub
-If you haven't already pushed your code to GitHub:
-```bash
-# 1. Initialize git repository
-git init
-
-# 2. Add all project files (.gitignore will exclude node_modules)
-git add .
-
-# 3. Commit the changes
-git commit -m "Initial commit: Akash Damahe Electrical Engineer Portfolio"
-
-# 4. Create a new repository on https://github.com/new (e.g., akash-damahe-portfolio)
-# 5. Link and push to GitHub:
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/akash-damahe-portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 2: Create a Web Service on Render
-1. Go to [https://dashboard.render.com](https://dashboard.render.com) and sign in (or register with GitHub).
-2. Click the **"New +"** button in the top navigation and select **"Web Service"**.
-3. Choose **"Build and deploy from a Git repository"** and click **Next**.
-4. Connect your GitHub account and select your `akash-damahe-portfolio` repository.
-
-### Step 3: Configure Service Settings
-Fill in the deployment settings as follows:
-- **Name**: `akash-damahe-portfolio` (or your preferred subdomain)
-- **Region**: Choose the region closest to your target audience (e.g., *Singapore* or *Frankfurt* or *Oregon*)
-- **Branch**: `main`
-- **Root Directory**: (Leave blank / root)
-- **Runtime**: `Node`
-- **Build Command**: `npm install`
-- **Start Command**: `npm start`
-- **Instance Type**: `Free`
-
-### Step 4: Environment Variables (Optional)
-Render automatically assigns a dynamic port via `process.env.PORT`, which `server.js` already listens to:
-```javascript
-const PORT = process.env.PORT || 3000;
-```
-If you wish to specify environment flags, you can add:
-- `NODE_ENV` = `production`
-
-### Step 5: Deploy & Verify
-1. Click **"Create Web Service"**.
-2. Render will pull the code from GitHub, install dependencies with `npm install`, and run `npm start`.
-3. Within 1-2 minutes, you will receive your live URL:
-   `https://akash-damahe-portfolio.onrender.com`
-4. Visit your live URL and test all interactive features!
-
----
-
-## 🔌 API Reference
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/health` | Health check for uptime monitors & Render keep-alive |
-| `GET` | `/api/portfolio-data` | Complete package of projects, education, competitions, internships, and stats |
-| `GET` | `/api/projects` | Fetch all projects (or filter by `?category=Power%20Systems`) |
-| `GET` | `/api/education` | Fetch academic milestones and topper honors |
-| `GET` | `/api/competitions` | Fetch competition awards and symposium recognitions |
-| `GET` | `/api/internships` | Fetch industrial internship records |
-| `POST` | `/api/contact` | Submit contact form `{ name, email, phone, subject, message }` to SQLite |
-| `GET` | `/api/contacts` | Admin endpoint to review submitted contact messages |
-| `GET` | `/download-resume` | Triggers download of `Akash_Damahe_Resume.pdf` |
+1. Log in to [dashboard.render.com](https://dashboard.render.com).
+2. Click **New + ➔ Blueprint** and select `Akash-sketch-tech/Akash-sketch-tech.github.io`.
+3. Render reads `render.yaml` and deploys your full-stack portfolio automatically.
 
 ---
 
