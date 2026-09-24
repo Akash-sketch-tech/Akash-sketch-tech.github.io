@@ -178,10 +178,121 @@ body {
 
 /* Custom card hover lift */
 .hover-lift {
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .hover-lift:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px -10px rgba(2, 132, 199, 0.2), 0 0 15px rgba(56, 189, 248, 0.15);
+}
+.dark .hover-lift:hover {
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.25);
+}
+
+/* ==========================================================================
+   Profile Picture Interactive Hover Effects
+   ========================================================================== */
+.profile-group {
+  perspective: 1000px;
+}
+
+/* Outer orbit reaction */
+.orbit-dashed {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.profile-group:hover .orbit-dashed {
+  border-color: rgba(56, 189, 248, 0.7);
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.5));
+  animation-duration: 12s !important;
+}
+
+/* Inner pulsing ring reaction */
+.orbit-pulsing {
+  transition: all 0.5s ease;
+}
+.profile-group:hover .orbit-pulsing {
+  border-color: rgba(56, 189, 248, 0.8);
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 16px rgba(14, 165, 233, 0.6));
+}
+
+/* Glow background reaction */
+.orbit-glow {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+}
+.profile-group:hover .orbit-glow {
+  transform: scale(1.3);
+  opacity: 0.9;
+  filter: blur(24px);
+}
+
+/* Profile container frame 3D lift & neon glow */
+.profile-frame {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.5s ease, background 0.5s ease;
+}
+.profile-group:hover .profile-frame {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 25px 50px -12px rgba(14, 165, 233, 0.45), 0 0 35px 4px rgba(56, 189, 248, 0.5);
+  background: linear-gradient(to bottom, #38bdf8, #2563eb, #6366f1);
+}
+
+/* Diagonal Light-Sheen Sweep Effect */
+.profile-sheen {
+  position: relative;
+  overflow: hidden;
+}
+.profile-sheen::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  pointer-events: none;
+}
+.profile-group:hover .profile-sheen::after {
+  opacity: 1;
+  animation: shineSweep 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes shineSweep {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+/* Floating Qualification Badge Hover Reaction */
+.floating-badge {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.floating-badge:hover {
+  transform: translateY(-8px) scale(1.06) !important;
+  box-shadow: 0 16px 32px -8px rgba(2, 132, 199, 0.35);
+  border-color: #38bdf8 !important;
+}
+
+/* Electric Buttons Hover */
+.btn-electric {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-electric:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -5px rgba(2, 132, 199, 0.45);
+}
+.btn-electric:active {
+  transform: translateY(-1px);
 }
 
 /* Sine wave animation for electrical banner */
@@ -194,3 +305,4 @@ body {
   stroke-dasharray: 8 6;
   animation: waveFlow 4s linear infinite;
 }
+
