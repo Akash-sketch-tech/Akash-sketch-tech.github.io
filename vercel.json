@@ -1,0 +1,5 @@
+{
+  "buildCommand": "node export-static.js",
+  "outputDirectory": "public",
+  "cleanUrls": true
+}

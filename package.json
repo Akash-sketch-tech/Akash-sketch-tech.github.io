@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
+    "build": "node export-static.js",
     "reset-db": "node database.js --reset",
     "export": "node export-static.js"
   },
