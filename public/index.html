@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Akash Damahe | Electrical Engineer (Diploma + Degree) | Portfolio</title>
+  <meta name="title" content="Akash Damahe | Electrical Engineer (Diploma + Degree) | Portfolio" />
+  <meta name="description" content="Professional portfolio of Akash Damahe, an accomplished Electrical Engineer holding both a Diploma and Degree in Electrical Engineering with top academic honors. Specialized in Power Systems, Substation Protection, Industrial Automation, and Renewable Energy." />
+  <meta name="keywords" content="Akash Damahe, Electrical Engineer, Diploma in Electrical Engineering, Degree in Electrical Engineering, Topper, Power Systems, Substation Automation, PLC SCADA, Renewable Energy, Portfolio" />
+  <meta name="author" content="Akash Damahe" />
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Akash Damahe | Electrical Engineer Portfolio" />
+  <meta property="og:description" content="Dual-qualified Electrical Engineer (Diploma + Degree) with Top Rank honors. Explore projects in Power Systems, Substation Automation, PLC/SCADA, and Solar Energy." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+            electric: {
+              blue: '#0ea5e9',
+              cyan: '#06b6d4',
+              amber: '#f59e0b',
+              gold: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for Electrical Glow, Animations, Scrollbars -->
+  <link rel="stylesheet" href="./css/style.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/placeholder-avatar.svg" />
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#090d16] dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- =========================================================================
+       1. NAVIGATION HEADER (Sticky Glassmorphic Bar)
+       ========================================================================= -->
+  <header class="sticky top-0 z-40 glass-header border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Identity -->
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Akash Damahe Portfolio">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-600 via-sky-500 to-cyan-400 text-white flex items-center justify-center font-extrabold text-xl shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+          ⚡
+        </div>
+        <div>
+          <div class="font-extrabold text-lg tracking-tight text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+            Akash Damahe
+          </div>
+          <div class="text-[11px] font-mono font-medium text-sky-600 dark:text-sky-400 tracking-wider uppercase">
+            Electrical Engineer (Diploma + Degree)
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600 dark:text-slate-300" aria-label="Main Navigation">
+        <a href="#about" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">About</a>
+        <a href="#education" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">Education</a>
+        <a href="#projects" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">Projects</a>
+        <a href="#competitions" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">Achievements</a>
+        <a href="#internships" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">Internships</a>
+        <a href="#contact" class="desktop-nav-link hover:text-sky-600 dark:hover:text-sky-400 transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA & Theme Toggle -->
+      <div class="hidden md:flex items-center gap-3">
+        <!-- Dark Mode Toggle Button -->
+        <button 
+          id="theme-toggle" 
+          type="button" 
+          aria-label="Toggle Theme" 
+          class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+        >
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg id="theme-icon-light" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg id="theme-icon-dark" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Download CTA -->
+        <a 
+          href="./assets/Akash_Damahe_Resume.pdf" 
+          download="Akash_Damahe_CV.pdf" 
+          class="resume-download-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 shadow-md shadow-sky-600/20 hover:shadow-sky-600/30 transition-all hover:-translate-y-0.5"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+
+      <!-- Mobile Controls (Theme + Hamburger) -->
+      <div class="flex items-center gap-2 md:hidden">
+        <button 
+          id="theme-toggle-mobile" 
+          type="button" 
+          aria-label="Toggle Theme" 
+          class="p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+        >
+          <svg id="theme-icon-light-mob" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg id="theme-icon-dark-mob" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <button 
+          id="mobile-menu-btn" 
+          type="button" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation menu"
+          class="p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-3 pb-6 space-y-3">
+      <a href="#about" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">About Me</a>
+      <a href="#education" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">Education & Honors</a>
+      <a href="#projects" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">Projects</a>
+      <a href="#competitions" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">Competitions & Wins</a>
+      <a href="#internships" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">Internships</a>
+      <a href="#contact" class="mobile-nav-link block py-2 text-base font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-600">Contact</a>
+      <div class="pt-2">
+        <a 
+          href="./assets/Akash_Damahe_Resume.pdf" 
+          download="Akash_Damahe_CV.pdf" 
+          class="resume-download-btn w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm text-white bg-sky-600 hover:bg-sky-500"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Download Official Resume (PDF)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrap -->
+  <main class="flex-grow">
+
+    <!-- =========================================================================
+         2. HOME / HERO SECTION
+         ========================================================================= -->
+    <section id="home" class="relative py-16 sm:py-24 lg:py-32 circuit-bg-light dark:circuit-bg-dark overflow-hidden border-b border-slate-200/80 dark:border-slate-800/80">
+      
+      <!-- Electrical background glow orbs -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-sky-400/10 dark:bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-10 right-10 w-80 h-80 bg-blue-500/10 dark:bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- LEFT COLUMN: Intro & Call To Actions -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Availability / Distinction Pill -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-sky-50 dark:bg-sky-950/70 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800/80 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500 -ml-3.5"></span>
+              <span>Dual Engineering Foundation: Diploma + B.E. (Degree)</span>
+              <span class="font-bold text-amber-600 dark:text-amber-400">★ Academic Topper</span>
+            </div>
+
+            <!-- Main Tagline -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+              Hello, I'm <br class="hidden sm:inline" />
+              <span class="text-gradient">Akash Damahe</span>
+            </h1>
+
+            <!-- Professional Subheading -->
+            <h2 class="text-lg sm:text-2xl font-bold text-slate-700 dark:text-slate-200">
+              Electrical Engineer &bull; Power Systems &bull; Automation &bull; Renewable Energy
+            </h2>
+
+            <!-- Detailed Intro Paragraph -->
+            <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+              Holding both a <strong class="text-slate-900 dark:text-white">Diploma in Electrical Engineering</strong> and a <strong class="text-slate-900 dark:text-white">Bachelor's Degree in Electrical Engineering</strong> with consistent top-rank honors. Blending real-world hands-on practical troubleshooting with advanced power system engineering, high-voltage substation protection, PLC/SCADA automation, and solar PV innovation.
+            </p>
+
+            <!-- Buttons: Download Resume & Contact Me -->
+            <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <!-- Download Resume Button -->
+              <a 
+                href="./assets/Akash_Damahe_Resume.pdf" 
+                download="Akash_Damahe_CV.pdf" 
+                class="resume-download-btn px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 shadow-lg shadow-sky-600/25 hover:shadow-sky-600/35 transition-all hover:-translate-y-0.5 inline-flex items-center gap-2.5"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <!-- Contact Me Button (Email link as requested) -->
+              <a 
+                href="mailto:akashdamahe@example.com?subject=Inquiry%20Regarding%20Electrical%20Engineering%20Opportunities" 
+                class="px-6 py-3.5 rounded-xl font-bold text-sm text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 shadow-sm transition-all hover:-translate-y-0.5 inline-flex items-center gap-2"
+              >
+                <svg class="w-4 h-4 text-sky-600 dark:text-sky-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span>Contact Me</span>
+              </a>
+
+              <!-- View Projects Quick Jump -->
+              <a 
+                href="#projects" 
+                class="px-5 py-3.5 rounded-xl font-bold text-sm text-sky-600 dark:text-sky-400 hover:text-sky-700 dark:hover:text-sky-300 transition-colors inline-flex items-center gap-1.5"
+              >
+                <span>Explore Projects</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+              </a>
+            </div>
+
+            <!-- Metrics Strip -->
+            <div class="pt-8 border-t border-slate-200 dark:border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
+              <div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-amber-500 dark:text-amber-400">#1 Rank</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-0.5">Academic Topper</div>
+              </div>
+              <div>
+                <div id="stat-projects" class="text-2xl sm:text-3xl font-extrabold text-sky-600 dark:text-sky-400">6+</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-0.5">Technical Projects</div>
+              </div>
+              <div>
+                <div id="stat-competitions" class="text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400">5+</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-0.5">Symposium Wins</div>
+              </div>
+              <div>
+                <div id="stat-internships" class="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">3</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 uppercase tracking-wider mt-0.5">Field Internships</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: Professional Profile Image Placeholder Container -->
+          <div class="lg:col-span-5 flex justify-center relative">
+            
+            <div class="relative w-72 h-72 sm:w-88 sm:h-88 lg:w-96 lg:h-96 flex items-center justify-center">
+              
+              <!-- Outer Glowing Circuit Ring (Rotating) -->
+              <div class="absolute inset-0 rounded-full border-2 border-dashed border-sky-400/40 dark:border-sky-400/30 animate-spin" style="animation-duration: 40s;"></div>
+              
+              <!-- Inner Electric Ring (Pulsing) -->
+              <div class="absolute inset-4 rounded-full border border-sky-500/30 dark:border-sky-400/40 animate-pulse-slow"></div>
+
+              <!-- Glow background -->
+              <div class="absolute inset-8 rounded-full bg-gradient-to-tr from-sky-500/20 via-blue-600/10 to-transparent blur-xl"></div>
+
+              <!-- Profile Container Frame (Ready for image swap) -->
+              <div class="relative z-10 w-64 h-64 sm:w-76 sm:h-76 lg:w-80 lg:h-80 rounded-full p-2 bg-gradient-to-b from-sky-400 via-blue-600 to-indigo-700 shadow-2xl shadow-sky-600/20">
+                <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-white dark:border-slate-900 relative group">
+                  
+                  <!-- Profile Photo Placeholder Image -->
+                  <img 
+                    id="profile-photo-img"
+                    src="./assets/placeholder-avatar.svg" 
+                    alt="Akash Damahe - Electrical Engineer" 
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    onerror="this.src='./assets/placeholder-avatar.svg'"
+                  />
+
+                  <!-- Hover hint for Akash to replace photo -->
+                  <div class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4 text-center text-white">
+                    <span class="text-xs font-bold text-sky-400 mb-1">Profile Photo Container</span>
+                    <span class="text-[11px] text-slate-300">Place your image as <code class="bg-black/60 px-1 py-0.5 rounded text-sky-300">public/assets/profile.jpg</code> anytime!</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Badge 1: Dual Qualifications -->
+              <div class="absolute -bottom-2 -left-4 sm:left-0 z-20 px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl flex items-center gap-3 animate-float">
+                <div class="w-9 h-9 rounded-xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold text-lg">
+                  ⚡
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-slate-900 dark:text-white">Diploma + Degree</div>
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 font-medium">Dual Electrical Expertise</div>
+                </div>
+              </div>
+
+              <!-- Floating Badge 2: Academic Topper -->
+              <div class="absolute -top-2 -right-4 sm:right-0 z-20 px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-900 border border-amber-300 dark:border-amber-700/60 shadow-xl flex items-center gap-3 animate-float" style="animation-delay: 2.5s;">
+                <div class="w-9 h-9 rounded-xl bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-lg">
+                  ★
+                </div>
+                <div>
+                  <div class="text-xs font-extrabold text-amber-700 dark:text-amber-300">State / Dept Topper</div>
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400 font-medium">Consistent Distinction</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         3. ABOUT ME SECTION
+         ========================================================================= -->
+    <section id="about" class="py-20 sm:py-28 bg-white dark:bg-slate-900/60 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-950/60 border border-sky-200 dark:border-sky-800">
+            Professional Profile
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            About Akash Damahe
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            A distinctive electrical engineer combining practical workshop craftsmanship with advanced theoretical design, analytical modeling, and industrial automation capabilities.
+          </p>
+        </div>
+
+        <!-- 2-Column Story & Dual Strength Overview -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch mb-16">
+          
+          <!-- Left: Narrative Journey -->
+          <div class="lg:col-span-7 electric-border bg-slate-50 dark:bg-slate-900 rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-between">
+            <div class="space-y-4 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+              <h3 class="text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <span>The Dual-Qualification Advantage</span>
+                <span class="text-xs font-mono px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300">Diploma + Degree</span>
+              </h3>
+              
+              <p>
+                My engineering journey began with a rigorous <strong>3-year Diploma in Electrical Engineering</strong>, where I developed an intimate, hands-on understanding of electrical machinery, motor windings, industrial switchboards, substation switchyards, and protection relays. Graduating as the <strong>Polytechnic Institute Topper with 92.80% Distinction</strong>, I established a robust physical intuition for electrical hardware.
+              </p>
+
+              <p>
+                To complement my physical foundation with high-level analytical and computational prowess, I pursued a <strong>Bachelor of Engineering (B.E.) in Electrical Engineering</strong>, diving into high-voltage transients, complex load flow simulations, numerical relay coordination, power electronics, and embedded control. Once again, I achieved <strong>1st Rank / Department Topper with a CGPA of 9.42 / 10.0</strong>.
+              </p>
+
+              <p>
+                This synthesis empowers me to bridge the critical gap between field technicians and design engineers—I can design an automated substation scheme in ETAP or MATLAB, program the PLC logic, wire the physical panel, and diagnose transient faults on the switchyard floor.
+              </p>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-4 text-xs font-semibold text-slate-700 dark:text-slate-300">
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Field-Tested Practical Competency</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Advanced Analytical & Simulation Modeling</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+                <span>Commitment to Safety Standards (IEEE/IEC)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Key Competency Pillars -->
+          <div class="lg:col-span-5 flex flex-col gap-4">
+            
+            <div class="electric-border bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 shadow-sm">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950/80 text-sky-600 dark:text-sky-400 flex items-center justify-center font-bold text-lg">
+                  ⚡
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-slate-900 dark:text-white">Power Systems & Substations</h4>
+                  <p class="text-xs text-slate-500">220kV/132kV Switchyards & Protection</p>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                ETAP load flow, numerical relay coordination (distance, differential, overcurrent), SF6 breaker diagnostics, transformer oil & DGA analysis.
+              </p>
+            </div>
+
+            <div class="electric-border bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 shadow-sm">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-lg">
+                  ⚙️
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-slate-900 dark:text-white">Industrial Automation & Drives</h4>
+                  <p class="text-xs text-slate-500">PLC, SCADA & Motor Controls</p>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Siemens TIA Portal & Delta PLC Ladder Logic, InTouch SCADA, VFD parameterization, Modbus RTU communication, sensor instrumentation.
+              </p>
+            </div>
+
+            <div class="electric-border bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 shadow-sm">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-lg">
+                  ☀️
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-slate-900 dark:text-white">Renewable Solar PV & EV</h4>
+                  <p class="text-xs text-slate-500">Clean Energy Harvesting & Storage</p>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                PVsyst rooftop sizing, MPPT tracking algorithms, grid-tied solar inverters, EV Battery Management Systems (BMS) with cell balancing.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Technical Tools & Software Matrix -->
+        <div class="electric-border bg-slate-50 dark:bg-slate-900 rounded-3xl p-8 sm:p-10">
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <svg class="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            <span>Technical Skills & Engineering Toolkit</span>
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Category 1 -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70">
+              <h4 class="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider mb-3">Simulation & CAD</h4>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>MATLAB & Simulink</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>AutoCAD Electrical</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>ETAP (Power Systems)</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>Proteus VSM & KiCad</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>PVsyst Solar Modeling</li>
+              </ul>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70">
+              <h4 class="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-3">Automation & Controls</h4>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Siemens TIA Portal (PLC)</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Delta PLC Ladder Logic</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Wonderware InTouch SCADA</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>VFD Parameter Tuning</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Modbus RTU & RS485</li>
+              </ul>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70">
+              <h4 class="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-3">Power & Field Engineering</h4>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Substation Operations (220kV)</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Numerical Relay Grading</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Transformer Testing & DGA</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Earthing Grid Design</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span>Fault Analysis (Symmetrical)</li>
+              </ul>
+            </div>
+
+            <!-- Category 4 -->
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/70">
+              <h4 class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider mb-3">Embedded & Coding</h4>
+              <ul class="space-y-2 text-xs font-semibold text-slate-700 dark:text-slate-300">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>C / C++ & Embedded C</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Python (FFT & Analysis)</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>ESP32 / STM32 / Arduino</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>IoT Telemetry (MQTT/HTTP)</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Node.js & SQLite Basics</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         4. EDUCATION SECTION (Detailed Milestones & Academic Topper Honors)
+         ========================================================================= -->
+    <section id="education" class="py-20 sm:py-28 bg-slate-50 dark:bg-[#090d16] border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-700">
+            ★ Academic Excellence & Honors
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            Education Milestones
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            Consistently holding top ranks across both technical diploma and university degree curricula, marked by academic distinctions, gold medals, and faculty honors.
+          </p>
+        </div>
+
+        <!-- Timeline Container (Dynamic or pre-rendered) -->
+        <div id="education-container" class="space-y-6">
+          
+          <!-- Milestone 1: Degree -->
+          <div class="relative pl-8 sm:pl-10 pb-10 border-l-2 border-amber-400 dark:border-amber-500">
+            <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 ring-4 ring-amber-400/30 flex items-center justify-center font-bold text-xs shadow-sm">
+              ★
+            </div>
+
+            <div class="electric-border bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700">
+                      Degree Topper
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">2022 - 2025</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                    Bachelor of Engineering (B.E.) in Electrical Engineering
+                  </h3>
+                  <p class="text-sm font-medium text-slate-600 dark:text-slate-400">
+                    Government College of Engineering / Renowned Technical University • <span class="italic text-slate-500">State Technological University (Accredited A+ Grade)</span>
+                  </p>
+                </div>
+
+                <div class="sm:text-right shrink-0">
+                  <div class="inline-block sm:block text-base font-extrabold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-slate-800 px-3 py-1 rounded-lg border border-sky-100 dark:border-slate-700">
+                    CGPA: 9.42 / 10.0 (Distinction)
+                  </div>
+                </div>
+              </div>
+
+              <!-- Honors Callout -->
+              <div class="mb-4 p-3 rounded-xl bg-gradient-to-r from-amber-50 to-amber-100/50 dark:from-amber-950/40 dark:to-slate-900 border border-amber-200 dark:border-amber-800/80 text-amber-900 dark:text-amber-200 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                <span>Department Topper & Gold Medalist (Academic Excellence Award across all graduating semesters)</span>
+              </div>
+
+              <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                Specialized in Power Systems, High Voltage Switchgear, Renewable Energy Integration, and Industrial Automation. Consistently secured 1st rank across all semesters with distinction honors.
+              </p>
+
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1.5">Core Electrical Subjects:</span>
+                <p class="text-xs text-slate-700 dark:text-slate-300 font-mono leading-relaxed bg-slate-50 dark:bg-slate-800/40 p-2.5 rounded-lg border border-slate-100 dark:border-slate-800">
+                  Power System Analysis, Switchgear & Protection, Electrical Drives & Control, High Voltage Engineering, Renewable Energy Systems, Control Systems
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2: Diploma -->
+          <div class="relative pl-8 sm:pl-10 pb-10 border-l-2 border-amber-400 dark:border-amber-500">
+            <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400 ring-4 ring-amber-400/30 flex items-center justify-center font-bold text-xs shadow-sm">
+              ★
+            </div>
+
+            <div class="electric-border bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-3">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700">
+                      Diploma Topper
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">2019 - 2022</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                    Diploma in Electrical Engineering
+                  </h3>
+                  <p class="text-sm font-medium text-slate-600 dark:text-slate-400">
+                    Government Polytechnic Institute • <span class="italic text-slate-500">State Board of Technical Education (MSBTE/SBTE)</span>
+                  </p>
+                </div>
+
+                <div class="sm:text-right shrink-0">
+                  <div class="inline-block sm:block text-base font-extrabold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-slate-800 px-3 py-1 rounded-lg border border-sky-100 dark:border-slate-700">
+                    Percentage: 92.80% (Distinction)
+                  </div>
+                </div>
+              </div>
+
+              <!-- Honors Callout -->
+              <div class="mb-4 p-3 rounded-xl bg-gradient-to-r from-amber-50 to-amber-100/50 dark:from-amber-950/40 dark:to-slate-900 border border-amber-200 dark:border-amber-800/80 text-amber-900 dark:text-amber-200 text-xs sm:text-sm font-semibold flex items-center gap-2">
+                <svg class="w-4 h-4 text-amber-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                <span>Polytechnic Institute Topper & State Merit List Honoree (Best Outgoing Student)</span>
+              </div>
+
+              <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                Comprehensive foundational practical engineering training emphasizing electrical machines, industrial wiring, transformer maintenance, power transmission, and electronics.
+              </p>
+
+              <div class="pt-3 border-t border-slate-100 dark:border-slate-800">
+                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1.5">Core Electrical Subjects:</span>
+                <p class="text-xs text-slate-700 dark:text-slate-300 font-mono leading-relaxed bg-slate-50 dark:bg-slate-800/40 p-2.5 rounded-lg border border-slate-100 dark:border-slate-800">
+                  Electrical Machines (AC/DC), Transmission & Distribution, Industrial Electronics, PLC & Microcontrollers, Electrical Estimating & Costing
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3: Secondary School -->
+          <div class="relative pl-8 sm:pl-10 border-l-2 border-sky-400 dark:border-sky-600">
+            <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 ring-4 ring-sky-500/20 flex items-center justify-center font-bold text-xs shadow-sm">
+              3
+            </div>
+
+            <div class="electric-border bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-2">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2 mb-1.5">
+                    <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-900 dark:bg-sky-950/80 dark:text-sky-300 border border-sky-300 dark:border-sky-700">
+                      School Merit
+                    </span>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400">2018 - 2019</span>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                    Secondary School Certificate (SSC / 10th Standard)
+                  </h3>
+                  <p class="text-sm font-medium text-slate-600 dark:text-slate-400">
+                    Adarsh High School & Junior College • <span class="italic text-slate-500">State Secondary & Higher Secondary Board</span>
+                  </p>
+                </div>
+
+                <div class="sm:text-right shrink-0">
+                  <div class="inline-block sm:block text-base font-extrabold text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-slate-800 px-3 py-1 rounded-lg border border-sky-100 dark:border-slate-700">
+                    Percentage: 93.60% (Distinction)
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                Ranked 1st in Mathematics and Physical Sciences with overall merit distinction.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         5. PROJECTS SECTION (Grid Layout, Filterable, Dynamic SQLite Backend)
+         ========================================================================= -->
+    <section id="projects" class="py-20 sm:py-28 bg-white dark:bg-slate-900/60 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-950/60 border border-sky-200 dark:border-sky-800">
+            Engineering Portfolio
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            Featured Engineering Projects
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            High-impact solutions across power grid protection, industrial automation pipelines, renewable energy MPPT systems, and embedded EV technology.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button 
+            type="button" 
+            data-category="All" 
+            class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-sky-600 text-white shadow-md transition-all"
+          >
+            All Projects
+          </button>
+          <button 
+            type="button" 
+            data-category="Power Systems" 
+            class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-sky-600 transition-all"
+          >
+            Power Systems & Grid
+          </button>
+          <button 
+            type="button" 
+            data-category="Industrial Automation" 
+            class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-sky-600 transition-all"
+          >
+            Industrial Automation & PLC
+          </button>
+          <button 
+            type="button" 
+            data-category="Renewable Energy" 
+            class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-sky-600 transition-all"
+          >
+            Renewable & Solar PV
+          </button>
+          <button 
+            type="button" 
+            data-category="Embedded & EV" 
+            class="project-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-sky-600 transition-all"
+          >
+            Embedded & EV BMS
+          </button>
+        </div>
+
+        <!-- Projects Grid (Loaded dynamically from SQLite / rendered) -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Populated by JavaScript from SQLite backend -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         6. COMPETITIONS & ACHIEVEMENTS SECTION
+         ========================================================================= -->
+    <section id="competitions" class="py-20 sm:py-28 bg-slate-50 dark:bg-[#090d16] border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/60 border border-amber-300 dark:border-amber-700">
+            Trophy Case & Honors
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            Competitions & Technical Achievements
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            Proven track record of winning 1st prizes and distinctions in national-level technical project expositions, circuit debugging contests, and IEEE paper symposiums.
+          </p>
+        </div>
+
+        <!-- Grid of Competition Cards -->
+        <div id="competitions-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Populated by JavaScript from SQLite backend -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         7. INTERNSHIPS SECTION
+         ========================================================================= -->
+    <section id="internships" class="py-20 sm:py-28 bg-white dark:bg-slate-900/60 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800">
+            Field Experience
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            Industrial Internships & Training
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            Real-world field exposure across 220kV/132kV Extra High Voltage substations, industrial PLC automation manufacturing floors, and solar PV engineering installations.
+          </p>
+        </div>
+
+        <!-- Internships Container -->
+        <div id="internships-container" class="space-y-8">
+          <!-- Populated by JavaScript from SQLite backend -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         8. CONTACT SECTION (Form submitting to SQLite + Direct Info)
+         ========================================================================= -->
+    <section id="contact" class="py-20 sm:py-28 bg-slate-50 dark:bg-[#090d16] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-mono font-bold text-sky-600 dark:text-sky-400 uppercase tracking-widest px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-950/60 border border-sky-200 dark:border-sky-800">
+            Get in Touch
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-4 mb-4">
+            Connect With Akash Damahe
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            Available for Electrical Engineering roles, technical collaborations, and consultations. Send a direct transmission below or reach out via email.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- LEFT: Direct Contact Channels & Socials -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="electric-border bg-white dark:bg-slate-900 rounded-3xl p-8 shadow-sm">
+              <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">
+                Direct Channels
+              </h3>
+
+              <div class="space-y-5">
+                <!-- Direct Email -->
+                <a href="mailto:akashdamahe@example.com" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 hover:bg-sky-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700/60 transition-colors group">
+                  <div class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email Address</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                      akashdamahe@example.com
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:+919876543210" class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 hover:bg-sky-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700/60 transition-colors group">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Telephone / WhatsApp</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-sky-600 transition-colors">
+                      +91 98765 43210
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Location -->
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60">
+                  <div class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Location</div>
+                    <div class="text-sm font-bold text-slate-900 dark:text-white">
+                      Maharashtra, India (Open to Relocation / Remote)
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Professional Profiles -->
+                <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center gap-3">
+                  <a href="https://linkedin.com/in/akashdamahe" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-sky-600 hover:text-white transition-colors text-center text-xs font-bold flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/akashdamahe" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-900 hover:text-white transition-colors text-center text-xs font-bold flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Box in Contact section -->
+            <div class="p-6 rounded-3xl bg-gradient-to-tr from-sky-900 to-slate-900 text-white shadow-xl relative overflow-hidden">
+              <div class="relative z-10">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-sky-300">Quick Access</span>
+                <h4 class="text-lg font-bold mt-1 mb-2">Need a Comprehensive CV?</h4>
+                <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                  Download the complete ATS-formatted resume detailing coursework, academic ranks, certifications, and technical projects.
+                </p>
+                <a 
+                  href="./assets/Akash_Damahe_Resume.pdf" 
+                  download="Akash_Damahe_CV.pdf" 
+                  class="resume-download-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-white text-slate-900 hover:bg-sky-50 transition-all"
+                >
+                  <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                  <span>Download Resume PDF</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Interactive Contact Form Submitting to SQLite -->
+          <div class="lg:col-span-7">
+            <div class="electric-border bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-10 shadow-sm">
+              <div class="flex items-center justify-between mb-6">
+                <div>
+                  <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Send a Message
+                  </h3>
+                  <p class="text-xs text-slate-500 mt-1">
+                    Directly recorded to the portfolio's SQLite backend database.
+                  </p>
+                </div>
+                <div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span>SQLite Online</span>
+                </div>
+              </div>
+
+              <form id="contact-form" class="space-y-4" novalidate>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Name Field -->
+                  <div>
+                    <label for="contact-name" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                      Your Name <span class="text-rose-500">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="contact-name" 
+                      required 
+                      placeholder="e.g. John Doe"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-400"
+                    />
+                  </div>
+
+                  <!-- Email Field -->
+                  <div>
+                    <label for="contact-email" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                      Email Address <span class="text-rose-500">*</span>
+                    </label>
+                    <input 
+                      type="email" 
+                      id="contact-email" 
+                      required 
+                      placeholder="e.g. john@example.com"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-400"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <!-- Phone Field (Optional) -->
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                      Phone Number <span class="text-slate-400 font-normal">(Optional)</span>
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="contact-phone" 
+                      placeholder="e.g. +91 98765 00000"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-400"
+                    />
+                  </div>
+
+                  <!-- Subject Field -->
+                  <div>
+                    <label for="contact-subject" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                      Subject <span class="text-rose-500">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      id="contact-subject" 
+                      required 
+                      placeholder="e.g. Opportunity / Substation Project"
+                      class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-400"
+                    />
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div>
+                  <label for="contact-message" class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                    Your Message <span class="text-rose-500">*</span>
+                  </label>
+                  <textarea 
+                    id="contact-message" 
+                    rows="5" 
+                    required 
+                    placeholder="Hello Akash, I reviewed your electrical engineering portfolio and would like to discuss..."
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 transition-all placeholder:text-slate-400 resize-y"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                  <button 
+                    type="submit" 
+                    id="contact-submit-btn" 
+                    class="w-full py-4 px-6 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 shadow-lg shadow-sky-600/25 hover:shadow-sky-600/35 transition-all flex items-center justify-center gap-2"
+                  >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    <span>Transmit Message to Akash</span>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- Brand & Details -->
+        <div class="text-center md:text-left">
+          <div class="flex items-center justify-center md:justify-start gap-2.5 font-extrabold text-white text-lg">
+            <span class="text-sky-400">⚡</span>
+            <span>Akash Damahe</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">
+            Electrical Engineer &bull; Diploma + Degree (Academic Topper) &bull; Power Systems &bull; Automation
+          </p>
+        </div>
+
+        <!-- Tech Stack Pill -->
+        <div class="flex flex-wrap items-center justify-center gap-2 text-xs font-mono text-slate-400">
+          <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-sky-400">Node.js Express</span>
+          <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-amber-400">SQLite3</span>
+          <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-cyan-400">Tailwind CSS</span>
+          <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-emerald-400">Render Ready</span>
+        </div>
+
+        <!-- Submissions link & Copyright -->
+        <div class="text-center md:text-right text-xs">
+          <div>&copy; 2026 Akash Damahe. All rights reserved.</div>
+          <div class="mt-1">
+            <button id="view-messages-trigger" type="button" class="text-sky-400 hover:text-sky-300 underline transition-colors">
+              Database Messages Viewer (Admin)
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================================
+       10. PROJECT DETAILS MODAL
+       ========================================================================= -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/70 modal-backdrop">
+    <div class="relative w-full max-w-2xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[90vh] overflow-y-auto" id="project-modal-content">
+      <!-- Injected by JavaScript -->
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       11. DATABASE MESSAGES VIEWER MODAL (ADMIN)
+       ========================================================================= -->
+  <div id="messages-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/70 modal-backdrop">
+    <div class="relative w-full max-w-3xl bg-white dark:bg-slate-900 rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-800 max-h-[85vh] flex flex-col">
+      <div class="p-6 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <span>SQLite Database: Contact Submissions</span>
+            <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400">Live</span>
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">Stored in <code class="font-mono text-sky-600 dark:text-sky-400">data/portfolio.db</code></p>
+        </div>
+        <button id="close-messages-modal" class="text-slate-400 hover:text-slate-600 dark:hover:text-white p-1 rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <div id="messages-list-container" class="p-6 overflow-y-auto space-y-4 flex-1">
+        <!-- Messages loaded dynamically via API -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       12. TOAST NOTIFICATION CONTAINER
+       ========================================================================= -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-4 rounded-xl shadow-2xl text-sm font-semibold text-white bg-slate-900 dark:bg-sky-600 border border-sky-400/50 transition-all duration-300 transform translate-y-8 opacity-0 pointer-events-none">
+    <div id="toast-icon"></div>
+    <div id="toast-message">Notification</div>
+  </div>
+
+
+  <!-- Application Scripts -->
+  <script src="./js/app.js"></script>
+</body>
+</html>

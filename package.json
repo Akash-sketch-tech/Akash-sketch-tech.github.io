@@ -1,0 +1,29 @@
+{
+  "name": "akash-damahe-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Personal Portfolio for Akash Damahe - Electrical Engineer (Diploma + Degree)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-db": "node database.js --reset",
+    "export": "node export-static.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "electrical-engineering",
+    "express",
+    "sqlite",
+    "tailwind"
+  ],
+  "author": "Akash Damahe",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1",
+    "pdfkit": "^0.20.2"
+  }
+}
